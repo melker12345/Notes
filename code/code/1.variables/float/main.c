@@ -22,7 +22,12 @@ void div() {
   float b = 3.3;
 
   float c = b / a;
-  printf("%f", c);
+  printf("\nDivition float by int:\n%f", c);
+
+  float d = 2;
+  float e = 3.3;
+  float f = e / d;
+  printf("%f", f);
 }
 
 int main() {
