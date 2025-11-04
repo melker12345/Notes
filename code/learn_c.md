@@ -17,7 +17,7 @@
 ## Level 1. Syntax.
 
 1. Variables.
-  - int []
+  - int [X]
   - float []
   - double []
   - char []
