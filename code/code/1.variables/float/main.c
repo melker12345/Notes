@@ -28,5 +28,7 @@ void div() {
 int main() {
   simple();
   arithmetic();
+
+  div();
   return 0;
 }
