@@ -27,7 +27,7 @@ void div() {
   float d = 2;
   float e = 3.3;
   float f = e / d;
-  printf("%f", f);
+  printf("Divition float by float:\n%f", f);
 }
 
 int main() {
