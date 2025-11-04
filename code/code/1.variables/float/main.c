@@ -16,6 +16,7 @@ void arithmetic() {
   printf("\nMultiplication\n%.2f * %.2f = %.2f\n", a, b, a * b);
   printf("\nDivition\n%.2f / %.2f = %.2f\n", a, b, a / b);
 }
+
 int main() {
   simple();
   arithmetic();
