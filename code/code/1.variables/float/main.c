@@ -5,6 +5,7 @@ void simple() {
   printf("%.2f\n", a);
 }
 
+// simple arithmetic
 void arithmetic() {
   float a = 1.1;
   float b = 2.2;
