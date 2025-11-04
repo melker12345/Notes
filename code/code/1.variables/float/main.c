@@ -21,7 +21,7 @@ void div() {
   int a = 2;
   float b = 3.3;
 
-  float c = a / b;
+  float c = b / a;
   printf("%f", c);
 }
 
