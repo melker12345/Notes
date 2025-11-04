@@ -17,6 +17,14 @@ void arithmetic() {
   printf("\nDivition\n%.2f / %.2f = %.2f\n", a, b, a / b);
 }
 
+void div() {
+  int a = 2;
+  float b = 3.3;
+
+  float c = a / b;
+  printf("%f", c);
+}
+
 int main() {
   simple();
   arithmetic();
