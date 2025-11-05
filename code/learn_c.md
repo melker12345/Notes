@@ -18,7 +18,7 @@
 
 1. Variables.
   - int [X]
-  - float []
+  - float [X]
   - double []
   - char []
   - const []
