@@ -19,7 +19,7 @@ void arithmetic() {
 
 void div() {
   int a = 2;
-  float b = 3.3;
+  float b = 3;
 
   float c = b / a;
   printf("\nDivition float by int:\n%f\n", c);
