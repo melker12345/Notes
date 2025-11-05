@@ -18,13 +18,13 @@ void arithmetic() {
 }
 
 void div() {
-  int a = 2;
-  float b = 3;
+  int a = 3;
+  float b = 10;
 
   float c = b / a;
   printf("\nDivition float by int:\n%f\n", c);
 
-  float d = 2;
+  float d = 3;
   float e = 3;
   float f = e / d;
   printf("Divition float by float:\n%f", f);
