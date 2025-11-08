@@ -19,7 +19,7 @@
 1. Variables.
   - int [X]
   - float [X]
-  - double []
+  - double [X]
   - char []
   - const []
   - static []
