@@ -2,7 +2,7 @@
 
 int main() {
   double a = 1.0;
-  printf("%d", a);
+  printf("%f", a);
 
   return 0;
 }
