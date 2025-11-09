@@ -22,7 +22,7 @@ int main() {
       0b10000001, 0b10000001, 0b10000001, 0b00000000,
   };
 
-  enum letters { 0 = FONT_A, 1 = FONT_B, 2 = FONT_H };
+  enum letters { FONT_A, 1 = FONT_B, 2 = FONT_H };
 
   // Move FONTS into a enum and then loop through all.
   for (int i = 0; i < 2; i++) {
