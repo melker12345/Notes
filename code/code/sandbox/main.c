@@ -23,19 +23,29 @@ int main() {
 
       if (i == 1) {
         int row_pattern = FONT_A[y];
+        for (int x = 0; x < CHARACTER_WIDTH; x++) {
+          int bit_mask = 1 << (CHARACTER_WIDTH - 1 - x);
+
+          if (row_pattern & bit_mask) {
+            printf("*");
+          } else {
+            printf(" ");
+          }
+        }
+
       } else {
         int row_pattern = FONT_H[y];
-      }
+        for (int x = 0; x < CHARACTER_WIDTH; x++) {
+          int bit_mask = 1 << (CHARACTER_WIDTH - 1 - x);
 
-      for (int x = 0; x < CHARACTER_WIDTH; x++) {
-        int bit_mask = 1 << (CHARACTER_WIDTH - 1 - x);
-
-        if (row_pattern & bit_mask) {
-          printf("*");
-        } else {
-          printf(" ");
+          if (row_pattern & bit_mask) {
+            printf("*");
+          } else {
+            printf(" ");
+          }
         }
       }
+
       printf("\n");
     }
   }
