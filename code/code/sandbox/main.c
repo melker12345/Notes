@@ -18,20 +18,26 @@ int main() {
       0b10000001, 0b10000001, 0b10000001, 0b00000000,
   };
 
-  for (int y = 0; y < CHARACTER_HEIGHT; y++) {
+  for (int i = 0; i < 2; i++) {
+    for (int y = 0; y < CHARACTER_HEIGHT; y++) {
 
-    int row_pattern = FONT_A[y] + FONT_H[y];
-
-    for (int x = 0; x < CHARACTER_WIDTH; x++) {
-      int bit_mask = 1 << (CHARACTER_WIDTH - 1 - x);
-
-      if (row_pattern & bit_mask) {
-        printf("*");
+      if (i == 1) {
+        int row_pattern = FONT_A[y];
       } else {
-        printf(" ");
+        int row_pattern = FONT_H[y];
       }
+
+      for (int x = 0; x < CHARACTER_WIDTH; x++) {
+        int bit_mask = 1 << (CHARACTER_WIDTH - 1 - x);
+
+        if (row_pattern & bit_mask) {
+          printf("*");
+        } else {
+          printf(" ");
+        }
+      }
+      printf("\n");
     }
-    printf("\n");
   }
 
   return 0;
