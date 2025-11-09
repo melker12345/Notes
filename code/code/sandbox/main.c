@@ -9,6 +9,7 @@
 int main() {
   char text[] = "HI";
   int textLenght = strlen(text);
+  printf("%d", textLenght);
 
   for (int i = 0; i < 8; i++) {
     for (int j = 0; j < 32; j++) {
