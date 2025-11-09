@@ -1,0 +1,14 @@
+#include "stdio.h"
+
+/*
+ * assume i got a 8 by 16 display.
+ * make some text move across it
+ * */
+
+int main() {
+  for (int i = 0; i <= 8; i++) {
+    printf("*");
+  }
+
+  return 0;
+}
