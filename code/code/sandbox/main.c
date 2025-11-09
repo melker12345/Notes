@@ -9,6 +9,10 @@
 int main() {
   const int CHARACTER_WIDTH = 8;
   const int CHARACTER_HEIGHT = 8;
+  const int FONT_A[8] = {
+      0b01111100, 0b10000001, 0b10000001, 0b11111111,
+      0b10000001, 0b10000001, 0b10000001,
+  };
   const int FONT_H[8] = {
       0b10000001, 0b10000001, 0b10000001, 0b11111111,
       0b10000001, 0b10000001, 0b10000001, 0b00000000,
