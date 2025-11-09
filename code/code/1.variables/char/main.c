@@ -1,7 +1,7 @@
 #include "stdio.h"
 
 int main() {
-  char a = "a";
+  char a = 'q';
 
   printf("%c", a);
   return 0;
