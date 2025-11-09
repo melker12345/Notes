@@ -13,6 +13,10 @@ int main() {
       0b01111110, 0b10000001, 0b10000001, 0b11111111,
       0b10000001, 0b10000001, 0b10000001,
   };
+  const int FONT_B[8] = {
+      0b11111110, 0b10000001, 0b10000001, 0b10000010,
+      0b11111110, 0b10000001, 0b10000001, 0b11111111,
+  };
   const int FONT_H[8] = {
       0b10000001, 0b10000001, 0b10000001, 0b11111111,
       0b10000001, 0b10000001, 0b10000001, 0b00000000,
@@ -23,29 +27,19 @@ int main() {
 
       if (i == 1) {
         int row_pattern = FONT_A[y];
-        for (int x = 0; x < CHARACTER_WIDTH; x++) {
-          int bit_mask = 1 << (CHARACTER_WIDTH - 1 - x);
-
-          if (row_pattern & bit_mask) {
-            printf("*");
-          } else {
-            printf(" ");
-          }
-        }
-
       } else {
         int row_pattern = FONT_H[y];
-        for (int x = 0; x < CHARACTER_WIDTH; x++) {
-          int bit_mask = 1 << (CHARACTER_WIDTH - 1 - x);
-
-          if (row_pattern & bit_mask) {
-            printf("*");
-          } else {
-            printf(" ");
-          }
-        }
       }
 
+      for (int x = 0; x < CHARACTER_WIDTH; x++) {
+        int bit_mask = 1 << (CHARACTER_WIDTH - 1 - x);
+
+        if (row_pattern & bit_mask) {
+          printf("*");
+        } else {
+          printf(" ");
+        }
+      }
       printf("\n");
     }
   }
