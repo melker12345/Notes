@@ -10,7 +10,6 @@ int main() {
     for (int j = 0; j <= 8; j++) {
       printf("O\n");
     }
-    printf("*");
   }
 
   return 0;
