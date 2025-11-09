@@ -7,7 +7,7 @@
  * */
 
 int main() {
-  char text[] = "HI";
+  char text[] = "HIo";
   int textLenght = strlen(text);
   printf("%d", textLenght);
 
