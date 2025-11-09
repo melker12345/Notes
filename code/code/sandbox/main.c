@@ -7,17 +7,18 @@
  *
  **/
 int main() {
-  char text[] = "HI";
-  int textLenght = strlen(text);
-  printf("%d", textLenght);
-
-  const int FONT_I[8] = {
+  const int CHARACTER_WIDTH = 8;
+  const int CHARACTER_HEIGHT = 8;
+  const int FONT_H[8] = {
       0b10000001, 0b10000001, 0b10000001, 0b11111111,
       0b10000001, 0b10000001, 0b10000001, 0b00000000,
   };
 
-  for (int i = 0; i < 8; i++) {
-    for (int j = 0; j < 32; j++) {
+  for (int y = 0; y < CHARACTER_HEIGHT; y++) {
+
+    int row_pattern = FONT_H[y];
+
+    for (int x = 0; x < CHARACTER_WIDTH; x++) {
       printf("*");
     }
     printf("\n");
