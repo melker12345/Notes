@@ -7,8 +7,10 @@
 
 int main() {
   for (int i = 0; i <= 16; i++) {
-    for (int j = 0; j <= 8; j++)
-      printf("*");
+    for (int j = 0; j <= 8; j++) {
+      printf("|");
+    }
+    printf("*");
   }
 
   return 0;
