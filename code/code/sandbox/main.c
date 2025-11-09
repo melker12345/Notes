@@ -19,7 +19,13 @@ int main() {
     int row_pattern = FONT_H[y];
 
     for (int x = 0; x < CHARACTER_WIDTH; x++) {
-      printf("*");
+      int bit_mask = 1 << (CHARACTER_WIDTH - 1 - x);
+
+      if (row_pattern & bit_mask) {
+        printf("*");
+      } else {
+        printf(" ");
+      }
     }
     printf("\n");
   }
