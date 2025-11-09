@@ -22,6 +22,8 @@ int main() {
       0b10000001, 0b10000001, 0b10000001, 0b00000000,
   };
 
+  enum letters { FONT_A, FONT_B, FONT_H };
+
   // Move FONTS into a enum and then loop through all.
   for (int i = 0; i < 2; i++) {
     for (int y = 0; y < CHARACTER_HEIGHT; y++) {
