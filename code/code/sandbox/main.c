@@ -1,4 +1,5 @@
 #include "stdio.h"
+#include <string.h>
 
 /*
  * assume i got a 8 by 16 display.
@@ -6,6 +7,9 @@
  * */
 
 int main() {
+  char text[] = "HI";
+  int textLenght = strlen(text);
+
   for (int i = 0; i < 8; i++) {
     for (int j = 0; j < 32; j++) {
       printf("*");
