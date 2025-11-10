@@ -29,7 +29,7 @@ enum Font {
 };
 const *int fonts[FONT_COUNT]{FONT_A, FONT_B, FONT_H};
 
-void printFont(int FONT) {
+void printFont(int FONT[8]) {
   for (int y = 0; y < CHARACTER_HEIGHT; y++) {
     int row_pattern = FONT[y];
 
