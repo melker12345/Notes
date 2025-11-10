@@ -6,6 +6,9 @@
  * make some text move across it
  *
  **/
+const int CHARACTER_WIDTH = 8;
+const int CHARACTER_HEIGHT = 8;
+
 const int FONT_A[8] = {
     0b01111110, 0b10000001, 0b10000001, 0b10000001,
     0b11111111, 0b10000001, 0b10000001, 0b10000001,
@@ -26,9 +29,9 @@ enum Font {
 };
 const *int fonts[FONT_COUNT]{FONT_A, FONT_B, FONT_H};
 
-void printFont() {
+void printFont(int FONT) {
   for (int y = 0; y < CHARACTER_HEIGHT; y++) {
-    int row_pattern = FONT_A[y];
+    int row_pattern = FONT[y];
 
     for (int x = 0; x < CHARACTER_WIDTH; x++) {
       int bit_mask = 1 << (CHARACTER_WIDTH - 1 - x);
@@ -44,10 +47,9 @@ void printFont() {
 }
 
 int main() {
-  const int CHARACTER_WIDTH = 8;
-  const int CHARACTER_HEIGHT = 8;
   // Move FONTS into a enum and then loop through all.
   for (int i = 0; i < 2; i++) {
+    printFont(FONT_A);
   }
 
   return 0;
