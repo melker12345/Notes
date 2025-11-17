@@ -27,6 +27,7 @@ enum Font {
   FONT_B_INDEX,
   FONT_H_INDEX,
 };
+
 const *int fonts[FONT_COUNT]{FONT_A, FONT_B, FONT_H};
 
 void printFont(int FONT[8]) {
