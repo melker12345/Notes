@@ -22,7 +22,7 @@ const int FONT_H[8] = {
     0b10000001, 0b10000001, 0b10000001, 0b00000000,
 };
 
-int *fonts[] = {FONT_A, FONT_B, FONT_H};
+const int *fonts[] = {FONT_A, FONT_B, FONT_H};
 
 enum Font { FONT_A_INDEX, FONT_B_INDEX, FONT_H_INDEX, FONT_COUNT };
 
