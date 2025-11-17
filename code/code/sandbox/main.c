@@ -22,13 +22,9 @@ const int FONT_H[8] = {
     0b10000001, 0b10000001, 0b10000001, 0b00000000,
 };
 
-enum Font {
-  FONT_A_INDEX,
-  FONT_B_INDEX,
-  FONT_H_INDEX,
-};
+int *fonts[] = {FONT_A, FONT_B, FONT_H};
 
-const *int fonts[FONT_COUNT]{FONT_A, FONT_B, FONT_H};
+enum Font { FONT_A_INDEX, FONT_B_INDEX, FONT_H_INDEX, FONT_COUNT };
 
 void printFont(int FONT[8]) {
   for (int y = 0; y < CHARACTER_HEIGHT; y++) {
@@ -48,9 +44,8 @@ void printFont(int FONT[8]) {
 }
 
 int main() {
-  // Move FONTS into a enum and then loop through all.
-  for (int i = 0; i < 2; i++) {
-    printFont(FONT_A);
+  for (int i = 0; i > FONT_COUNT; i++) {
+    printFont(fonts[i]);
   }
 
   return 0;
