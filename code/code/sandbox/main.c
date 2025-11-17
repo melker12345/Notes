@@ -44,7 +44,7 @@ void printFont(const int FONT[8]) {
 }
 
 int main() {
-  for (int i = 0; i > FONT_COUNT; i++) {
+  for (int i = 0; i < FONT_COUNT; i++) {
     printFont(fonts[i]);
   }
 
