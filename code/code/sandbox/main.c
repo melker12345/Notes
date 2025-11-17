@@ -39,6 +39,7 @@ void printFont(const int FONT[8]) {
         printf(" ");
       }
     }
+    printf("\n");
   }
 }
 
