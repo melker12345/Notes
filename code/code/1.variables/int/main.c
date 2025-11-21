@@ -50,11 +50,11 @@ void bases() {
   int X = 0X2A;
   int b = 0b101010;
 
-  printf("%d ", d);
-  printf("%d ", o);
-  printf("%d ", x);
-  printf("%d ", X);
-  printf("%d ", b);
+  printf("%d, ", d);
+  printf("%d, ", o);
+  printf("%d, ", x);
+  printf("%d, ", X);
+  printf("%d, ", b);
 }
 
 void unsigned_int() {
