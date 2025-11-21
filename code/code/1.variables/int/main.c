@@ -1,3 +1,4 @@
+#include <limits.h>
 #include <stdio.h>
 #include <sys/ioctl.h>
 #include <unistd.h>
@@ -85,7 +86,15 @@ void bugg() {
   printf("Since a is set to 32768 we get a roll over into the negative.\n");
   printf("This is fixed by decreasing the value of a or using ini instead of "
          "short int.\n");
-}
+};
+
+void constants() {
+  int a = INT_MAX;
+  int b = INT_MIN;
+  int c = UINT_MAX;
+
+  printf("%d, %d, %d", a, b, c);
+};
 
 int main() {
 
@@ -98,8 +107,10 @@ int main() {
   // TODO: Consider adding examples for:
   // - Integer literals (decimal, octal with 0 prefix, hex with 0x prefix)
   //   Source: https://en.cppreference.com/w/c/language/integer_constant
+
   // - Integer constants (INT_MAX, INT_MIN, UINT_MAX from limits.h)
   //   Source: https://en.cppreference.com/w/c/header/limits
+
   // - Integer overflow behavior and undefined behavior
   //   Source: https://en.cppreference.com/w/c/language/behavior
   // - Integer division vs floating point division
