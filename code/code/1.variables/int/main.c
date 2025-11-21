@@ -104,6 +104,7 @@ int main() {
   divide();
   bugg();
   bases();
+  constants();
   // TODO: Consider adding examples for:
   // - Integer literals (decimal, octal with 0 prefix, hex with 0x prefix)
   //   Source: https://en.cppreference.com/w/c/language/integer_constant
