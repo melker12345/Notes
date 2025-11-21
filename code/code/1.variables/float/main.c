@@ -35,5 +35,18 @@ int main() {
   arithmetic();
 
   div();
+  
+  // TODO: Consider adding examples for:
+  // - Float precision and representation (IEEE 754)
+  // - Precision issues and rounding errors (e.g., 0.1 + 0.2 != 0.3)
+  // - Float literals with 'f' suffix (1.0f vs 1.0)
+  // - Scientific notation (1.5e3, 2.3E-4)
+  // - Special values: NaN (Not a Number), infinity (INFINITY)
+  // - Float comparison issues (use epsilon for equality checks)
+  // - Float size (typically 4 bytes, 32-bit)
+  // - Range limits (FLT_MAX, FLT_MIN from float.h)
+  // - Float vs double precision difference
+  // - Loss of precision when converting from double to float
+  
   return 0;
 }

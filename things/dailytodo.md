@@ -12,16 +12,16 @@ Journaling what's on the agenda today.
 
 --- 
 
+This is me typing now this is a lot better then before.
+the quick brown fox jumps over the lazy dogs.
 
-today I want to learn to type on this key board.
-this will take some time since I for one is not used to ortholinear keyboards, and also I need to learn US layout and also the layers is a bit tricky.
+so tomorrow i want to work.
+prehaps some coding on my display.  
+then when i come home i want to read a bit.
 
-This keyboard feels good though but i feel retarded since i can not even type on it.
+todo for the display is to create tose binary ararys for each remaining letter.
+find a way to display them on a row rather then one per row.
 
-I'm so slow, is not even funny
-
-How long will this take to learn to type on??
-
-I'm already seeing some improvements!!!
-
-This is something that will really be beneficial for me since
+then also we need to figure out how to make the screen moven:
+   - this means we need a speed.
+   - then we need to update the pixels to move one step per cycle.  

@@ -82,5 +82,15 @@ int main(){
   divide(); 
   bugg();
 
+  // TODO: Consider adding examples for:
+  // - Integer literals (decimal, octal with 0 prefix, hex with 0x prefix)
+  // - Integer constants (INT_MAX, INT_MIN, UINT_MAX from limits.h)
+  // - Integer overflow behavior and undefined behavior
+  // - Integer division vs floating point division
+  // - Integer promotion rules
+  // - Mixing signed and unsigned integers (potential bugs)
+  // - Size differences on different platforms (32-bit vs 64-bit)
+  // - Using stdint.h types (int8_t, int16_t, uint32_t, etc.) for portability
+
   return 0;
 }
