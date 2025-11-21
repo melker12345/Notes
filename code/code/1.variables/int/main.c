@@ -84,13 +84,21 @@ int main(){
 
   // TODO: Consider adding examples for:
   // - Integer literals (decimal, octal with 0 prefix, hex with 0x prefix)
+  //   Source: https://en.cppreference.com/w/c/language/integer_constant
   // - Integer constants (INT_MAX, INT_MIN, UINT_MAX from limits.h)
+  //   Source: https://en.cppreference.com/w/c/header/limits
   // - Integer overflow behavior and undefined behavior
+  //   Source: https://en.cppreference.com/w/c/language/behavior
   // - Integer division vs floating point division
+  //   Source: https://en.cppreference.com/w/c/language/operator_arithmetic
   // - Integer promotion rules
+  //   Source: https://en.cppreference.com/w/c/language/usual_arithmetic_conversions
   // - Mixing signed and unsigned integers (potential bugs)
+  //   Source: https://en.cppreference.com/w/c/language/conversion#Usual_arithmetic_conversions
   // - Size differences on different platforms (32-bit vs 64-bit)
+  //   Source: https://en.cppreference.com/w/c/types/integer#Properties
   // - Using stdint.h types (int8_t, int16_t, uint32_t, etc.) for portability
+  //   Source: https://en.cppreference.com/w/c/types/integer
 
   return 0;
 }
