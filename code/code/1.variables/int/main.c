@@ -43,6 +43,9 @@ void signed_int() {
   printf("Long Long: %ld, %lu: bytes\n\n", x3, sizeof(x3));
 }
 
+// Integer literals (decimal, octal with 0 prefix, hex with 0x prefix)
+// Source: https://en.cppreference.com/w/c/language/integer_constant
+
 void bases() {
   // In c we integers can have different bases.
   // these are base 2, 8, 10, 16. (binary, octal, decimal, hexadecimal)
@@ -89,7 +92,11 @@ void bugg() {
          "short int.\n");
 };
 
+// Integer constants (INT_MAX, INT_MIN, UINT_MAX from limits.h)
+// Source: https://en.cppreference.com/w/c/header/limits
 void constants() {
+  // These interger constants return the range (minimum and maximum value) a
+  // given type can have, uint don't need minimum.
   printf("CHAR_BIT       = %d\n", CHAR_BIT);
   printf("MB_LEN_MAX     = %d\n\n", MB_LEN_MAX);
 
@@ -126,6 +133,15 @@ void constants() {
   printf("WINT_MAX       = %jd\n", (intmax_t)WINT_MAX);
 };
 
+// - Integer overflow behavior and undefined behavior
+//   Source: https://en.cppreference.com/w/c/language/behavior
+
+void intoverflow() {
+
+  int a = INT_MAX;
+  printf("%d\n ", a + 1);
+}
+
 int main() {
 
   signed_int();
@@ -135,15 +151,6 @@ int main() {
   bugg();
   bases();
   constants();
-  // TODO: Consider adding examples for:
-  // - Integer literals (decimal, octal with 0 prefix, hex with 0x prefix)
-  //   Source: https://en.cppreference.com/w/c/language/integer_constant
-
-  // - Integer constants (INT_MAX, INT_MIN, UINT_MAX from limits.h)
-  //   Source: https://en.cppreference.com/w/c/header/limits
-
-  // - Integer overflow behavior and undefined behavior
-  //   Source: https://en.cppreference.com/w/c/language/behavior
 
   // - Integer division vs floating point division
   //   Source: https://en.cppreference.com/w/c/language/operator_arithmetic
