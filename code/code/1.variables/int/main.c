@@ -59,7 +59,7 @@ void bases() {
   printf("%d, ", o);
   printf("%d, ", x);
   printf("%d, ", X);
-  printf("%d, ", b);
+  printf("%d, \n", b);
 }
 
 void unsigned_int() {
