@@ -142,7 +142,8 @@ void intoverflow() {
   printf("%d\n ", a + 1);
   // Results in an overflow. i.e the minimum rather then the maximum.
 
-  printf("%d, \n", a / 0);
+  // printf("%d", a / 0); compile error since we do not know how to handle
+  // divition by 0.
 }
 
 int main() {
@@ -158,6 +159,7 @@ int main() {
   constants();
   divide();
   intoverflow();
+  divide();
 
   // - Integer division vs floating point division
   //   Source: https://en.cppreference.com/w/c/language/operator_arithmetic
