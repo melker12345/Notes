@@ -140,6 +140,9 @@ void intoverflow() {
 
   int a = INT_MAX;
   printf("%d\n ", a + 1);
+  // Results in an overflow. i.e the minimum rather then the maximum.
+
+  printf("%d, \n", a / 0);
 }
 
 int main() {
