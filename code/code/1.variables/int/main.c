@@ -133,7 +133,6 @@ void constants() {
 
 // - Integer overflow behavior and undefined behavior
 //   Source: https://en.cppreference.com/w/c/language/behavior
-
 void intoverflow() {
 
   int a = INT_MAX;
@@ -146,7 +145,6 @@ void intoverflow() {
 
 // - Using stdint.h types (int8_t, int16_t, uint32_t, etc.) for portability
 //   Source: https://en.cppreference.com/w/c/types/integer
-
 void intlib() {
   // Using the stdint libery allows you to declear more presice types.
   // this is good for portability since we can define int8_t, int16_t etc.
@@ -162,26 +160,21 @@ int main() {
 
   signed_int();
   divide();
+
   unsigned_int();
   divide();
+
   bugg();
   divide();
+
   bases();
   divide();
+
   constants();
   divide();
+
   intoverflow();
   divide();
 
-  // - Integer division vs floating point division
-  //   Source: https://en.cppreference.com/w/c/language/operator_arithmetic
-  // - Integer promotion rules
-  //   Source:
-  //   https://en.cppreference.com/w/c/language/usual_arithmetic_conversions
-  // - Mixing signed and unsigned integers (potential bugs)
-  //   Source:
-  //   https://en.cppreference.com/w/c/language/conversion#Usual_arithmetic_conversions
-  // - Size differences on different platforms (32-bit vs 64-bit)
-  //   Source: https://en.cppreference.com/w/c/types/integer#Properties
   return 0;
 }
