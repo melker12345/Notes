@@ -176,5 +176,7 @@ int main() {
   intoverflow();
   divide();
 
+  intlib();
+  divide();
   return 0;
 }
