@@ -49,17 +49,15 @@ void signed_int() {
 void bases() {
   // In c we integers can have different bases.
   // these are base 2, 8, 10, 16. (binary, octal, decimal, hexadecimal)
-  int d = 42;
-  int o = 052;
-  int x = 0x2a;
-  int X = 0X2A;
-  int b = 0b101010;
+  int decimal = 42;
+  int octal = 052;
+  int hexadecimal = 0X2A;
+  int binary = 0b101010;
 
-  printf("%d, ", d);
-  printf("%d, ", o);
-  printf("%d, ", x);
-  printf("%d, ", X);
-  printf("%d, \n", b);
+  printf("%d, ", decimal);
+  printf("%d, ", octal);
+  printf("%d, ", hexadecimal);
+  printf("%d, \n", binary);
 }
 
 void unsigned_int() {
@@ -146,6 +144,20 @@ void intoverflow() {
   // divition by 0.
 }
 
+// - Using stdint.h types (int8_t, int16_t, uint32_t, etc.) for portability
+//   Source: https://en.cppreference.com/w/c/types/integer
+
+void intlib() {
+  // Using the stdint libery allows you to declear more presice types.
+  // this is good for portability since we can define int8_t, int16_t etc.
+
+  // this are the maximum values of the respective types.
+  int8_t a = 0x7F;
+  int64_t b = 0x7FFFFFFFFFFFFFFF;
+
+  printf("int8_t = %d\nint16_t = %ld", a, b);
+}
+
 int main() {
 
   signed_int();
@@ -171,8 +183,5 @@ int main() {
   //   https://en.cppreference.com/w/c/language/conversion#Usual_arithmetic_conversions
   // - Size differences on different platforms (32-bit vs 64-bit)
   //   Source: https://en.cppreference.com/w/c/types/integer#Properties
-  // - Using stdint.h types (int8_t, int16_t, uint32_t, etc.) for portability
-  //   Source: https://en.cppreference.com/w/c/types/integer
-
   return 0;
 }
