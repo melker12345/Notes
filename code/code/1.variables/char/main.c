@@ -14,7 +14,7 @@ void char_as_ascii() {
   printf("ascii 90 = %c\n\n", z);
 
   // This loops through the ascii characters.
-  for (int i = 0; i < 255; i++) {
+  for (int i = -127; i < 127; i++) {
     if (i == 32) {
       printf("--END OF NON PRINTABLE CHARS--\n");
     };
