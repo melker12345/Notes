@@ -22,6 +22,7 @@ void char_as_ascii() {
   printf("Swedish characters: ÄÅÖ\n");
 
   // You also have signed and unsigned chars.
+  printf("unsigned Character:\n\n");
   unsigned char x = -66;
   printf("%c", x);
 }
