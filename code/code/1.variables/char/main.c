@@ -2,11 +2,12 @@
 
 void char_as_ascii() {
   // This is how the most basic char is defined:
+  //
   char a = 'a';
   printf("%c\n", a);
 
   // You can define chars as integer by utelizing ASCII.
-  char b = 66;
+  char b = -66;
   printf("ascii 66 = %c\n", b);
 
   char z = 90;
@@ -22,8 +23,9 @@ void char_as_ascii() {
   printf("Swedish characters: ÄÅÖ\n\n");
 
   // You also have signed and unsigned chars.
+  // These goes from 0 to 255.
   printf("Unsigned Character:\n\n");
-  unsigned char x = -1;
+  unsigned char x = 1;
   printf("%c", x);
 }
 
