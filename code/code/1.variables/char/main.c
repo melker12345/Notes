@@ -19,7 +19,7 @@ void char_as_ascii() {
     };
     printf("ascii %d = %c\n", i, i);
   };
-  printf("Swedish characters: ÄÅÖ\n");
+  printf("Swedish characters: ÄÅÖ\n\n");
 
   // You also have signed and unsigned chars.
   printf("unsigned Character:\n\n");
