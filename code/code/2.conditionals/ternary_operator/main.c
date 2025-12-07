@@ -15,6 +15,7 @@ int main(void) {
   int b = 1;
 
   a > b ? printf("True!") : printf("False!");
+  a < b ? printf("True!") : printf("False!");
 
   return 0;
 }
