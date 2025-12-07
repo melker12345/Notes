@@ -14,6 +14,8 @@ int main(void) {
   int a = 0;
   int b = 1;
 
+  // This is a simple example of how to produce one true and one false ternary
+  // expression.#warning
   a > b ? printf("True!") : printf("False!");
   a < b ? printf("True!") : printf("False!");
 
