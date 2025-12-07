@@ -20,10 +20,10 @@ int main(void) {
     printf("Thusday");
     break;
   case 3:
-    printf("Wensday");
+    printf("Wednesday");
     break;
   case 4:
-    printf("Thirsday");
+    printf("Thursday");
     break;
   case 5:
     printf("Friday");
