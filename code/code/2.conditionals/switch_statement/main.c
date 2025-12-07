@@ -11,7 +11,7 @@ int main(void) {
   // - Limitations vs if-else (no ranges, only discrete values)
   // - Common bugs: missing break, duplicate case labels, unreachable code
   // - Nested switch vs nested if trade-offs
-  int day = 2;
+  int day = 1;
   switch (day) {
   case 1:
     printf("Monday");
