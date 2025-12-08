@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+void simple(){
+  
+}
+
 int main() {
     // TODO: Cover the following topics:
     // 1. What is static? (storage class specifier)
